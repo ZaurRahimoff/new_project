@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIAN</title>
+    <script src="./js/main.js"></script>
+    
+    <!-- Favicons for different devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#868686">
+    <meta name="apple-mobile-web-app-title" content="LIAN">
+    <meta name="application-name" content="LIAN">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Framework -W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <main>
+    <header>
+        <nav>
+            <div>
+                <div class="w3-bar w3-top">
+                    <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small w3-container" style="width:10%">
+                        <img src="../images/logo.png" alt="Lights" class="w3-image" width="130" height="30">
+                    </a>
+                    <div>
+                        <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Home</a>
+                        <a href="/about.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">About</a>
+                        <a href="/portfolio.html" class="w3-text-black w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Portfolio</a>
+                        <a href="/blog.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Blog</a>
+                        <a href="/contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Contact</a>
+                        
+                        <input type="text" class="w3-bar-item w3-input w3-white w3-mobile w3-padding-24 w3-hide-small w3-hide-medium" placeholder="Search products..">
+                        <button class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small w3-hide-medium"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <a id="nav-icon" href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+                </div>
+                    
+                <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+        
+                    <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24"><img src="../images/logo.png" alt="Lights" class="w3-image" width="130" height="30"></a>
+                    <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Home</a>
+                    <a href="/about.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">About</a>
+                    <a href="/portfolio.html" class="w3-text-black w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Portfolio</a>
+                    <a href="/blog.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Blog</a>
+                    <a href="/contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Contact</a>    
+                </div>
+            </div>
+        </nav>
+        
+        <script>
+            function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+            }
+        </script>
+    </header>
+
+    <section class="about-header">
+        <img class="about-header--img" src="../images/portfolio-header.png" style="width:100%">
+    </section>
+
+    
+    <section id="gallery">
+        <div class="w3-container">
+    
+            <p class="w3-center">
+                <button class="w3-button w3-black button w3-text-white" onclick="myFunctionClickMe()">Click me</button>
+            </p>
+    
+            <!-- Photo Grid -->
+            <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+                <div class="w3-third">
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-1.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-2.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-3.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                </div>
+            
+                <div class="w3-third">
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-4.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-5.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-6.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-7.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                </div>
+                <div class="w3-third">
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-8.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-9.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                    <a href="/portfolio.html" class="js-open-modal" data-modal="1"><img src="../images/gallery/img-19.png" class="w3-btn w3-hover-opacity" style="width:100%"></a>
+                </div>
+            </div>
+            
+            <!-- End Page Content -->
+    
+            <script>
+                // Toggle grid padding
+                function myFunctionClickMe() {
+                  var x = document.getElementById("myGrid");
+                  if (x.className === "w3-row") {
+                    x.className = "w3-row-padding";
+                  } else { 
+                    x.className = x.className.replace("w3-row-padding", "w3-row");
+                  }
+                }
+                // Open and close sidebar
+                function w3_open() {
+                  document.getElementById("mySidebar").style.width = "100%";
+                  document.getElementById("mySidebar").style.display = "block";
+                }
+                
+                function w3_close() {
+                  document.getElementById("mySidebar").style.display = "none";
+                }
+            </script>
+        </div>
+    </section>
+    
+    
+    
+    <div class="modal" data-modal="1"  id="itemCard">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        
+      <div class="items w3-container">
+        <div class="w3-row">
+          <div class="items-content w3-container w3-half">
+            <h3 class="title">Pereira creative agency</h3>  
+            <p class="subtitle">Branding Design</p>
+            <hr></hr>
+            <div class="row">
+              <p class="data">February 28, 2015</p>
+              <p class="likes"><i class="far fa-heart"></i>324 likes</p>          
+            </div>
+            <p class="items-content--text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+            </p>
+            <hr></hr>
+            <div class="tags">
+              <p class="tags-title">Role on Project:</p>
+              <p class="tags-text">Project Designer, Lead Designer Marketing Head</p>
+            </div>
+            <div class="tags">
+              <p class="tags-title">Tags:</p>
+              <p class="tags-text">Mobile App, UI/UX Design</p>
+            </div>
+          </div>
+          <div class="items-image w3-container w3-half">
+            <img class="about-header--img" src="../images/modal-img-1.png" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- Подложка под модальным окном -->
+      <div class="overlay js-overlay-modal"></div>
+      
+      <!-- Initialize Swiper -->
+      <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          thumbs: {
+            swiper: galleryThumbs
+          }
+        });
+      </script>
+
+    <section id="about-team">
+        <div class="w3-container w3-padding-32">
+            <div class="about-team--header w3-center">
+                <p class="title">Related works</p>
+                <p class="text w3-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed <br> diam nonummy  nibh d tincidunt ut laoreet dolore magna aliquam </p>
+            </div>
+            <div class="about-team--cards">
+                <div class="w3-col m3 w3-center w3-padding">
+                  <img src="../images/relatworks-img-1.png" style="width:100%"  alt="">              
+                </div>
+            
+                <div class="w3-col m3 w3-center w3-padding">
+                  <img src="../images/relatworks-img-2.png" style="width:100%" alt="">
+                </div>
+                  
+
+                <div class="w3-col m3 w3-center w3-padding">
+                    <img src="../images/relatworks-img-3.png" style="width:100%" alt=" "> </div>
+                </div>
+        </div>           
+    </section>
+
+
+    <footer id="footer">
+        <div class="w3-container content">
+        
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-container">
+                <img src="../images/logo.png" alt="Lights" class="w3-image" width="160" height="60">
+            </a>
+            <div class="social-links">
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-instagram"></i>
+                </a>    
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        
+            <p class="subtitle">© 2016 Mulitix Theme by ThemeForces. All Rights Reserved.</p>
+        </div>
+    </footer>
+  </main> 
+   <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/b32bd06989.js" crossorigin="anonymous"></script>
+   
+   
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
+   
+   <!-- Maps Google -->
+   <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuERAbKXDiTF8xHxZ5FXCpQfCLJ9RTx14&callback=initMap&libraries=&v=weekly" defer></script>
+</body>
+</html>

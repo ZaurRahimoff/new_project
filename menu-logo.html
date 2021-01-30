@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIAN</title>
+  <script src="./js/main.js"></script>
+  
+  <!-- Favicons for different devices -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#868686">
+  <meta name="apple-mobile-web-app-title" content="LIAN">
+  <meta name="application-name" content="LIAN">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Framework -W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <main>
+
+    <header>
+      <nav class="nav">
+          <div>
+              <div class="w3-bar w3-top">
+                  <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small w3-container" style="width:10%">
+                      <img src="../images/logo.png" alt="Lights" class="w3-image" width="130" height="30">
+                  </a>
+                  <div>
+                      <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Home</a>
+                      <a href="/about.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">About</a>
+                      <a href="/portfolio.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Portfolio</a>
+                      <a href="/blog.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Blog</a>
+                      <a href="/contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Contact</a>
+                      
+                      <input type="text" class="w3-bar-item w3-input w3-white w3-mobile w3-padding-24 w3-hide-small w3-hide-medium" placeholder="Search products..">
+                      <button class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small w3-hide-medium"><i class="fas fa-search"></i></button>
+                  </div>
+                  
+                  <a id="nav-icon" href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+              </div>
+                  
+              <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+      
+                  <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24"><img src="../images/logo.png" alt="Lights" class="w3-image" width="130" height="30"></a>
+                  <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Home</a>
+                  <a href="/about.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">About</a>
+                  <a href="/portfolio.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Portfolio</a>
+                  <a href="/blog.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Blog</a>
+                  <a href="/contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Contact</a>    
+              </div>
+          </div>
+      </nav>
+      
+      <script>
+          function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+            } else { 
+              x.className = x.className.replace(" w3-show", "");
+            }
+          }
+      </script>
+    </header>
+  
+    <section id="slider">
+      <div class="slider">
+      <div class="w3-display-container" style="width: 100%">
+        <img class="mySlides" src="../images/slide1.png" style="width:100%">
+        <img class="mySlides" src="../images/slide2.png" style="width:100%">
+        <div class="button-slide w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <button class="w3-button w3-display-left w3-hover-black" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-display-right w3-hover-black" onclick="plusDivs(+1)">&#10095;</button>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Script for SlideShow-W3.CSS -->
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+      }
+
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 2 seconds
+      }
+      </script>
+    </section>
+    
+    <section id="menu">
+    
+        <!-- Responsive navigation bar -->
+        <div class="w3-bar menu-link">
+          <a href="/index.html" class="menu-link__a w3-bar-item w3-button w3-mobile">All</a>
+          <a href="/menu-logo.html" class="menu-link__a w3-bar-item w3-button w3-mobile">Logo</a>
+          <a href="/menu-app.html" class="menu-link__a w3-bar-item w3-button w3-mobile">Mobile app</a>
+          <a href="/menu-wordpress.html" class="menu-link__a w3-bar-item w3-button w3-mobile">Wordpress</a>
+          <a href="/menu-ui.html" class="menu-link__a w3-bar-item w3-button w3-mobile">Ui/Ux</a>
+          <a href="/menu-web.html" class="menu-link__a w3-bar-item w3-button w3-mobile">Web Design</a>
+          <a href="/menu-ui.html" class="menu-link__a w3-bar-item w3-button w3-mobile">Branding</a>
+        </div>
+        </div>
+    
+      </section>
+
+
+    <section id="gallery">
+        <div class="w3-container">
+        
+            <!-- Photo Grid -->
+            <div class="w3-row" id="myGrid" style="margin-bottom:128px">                
+                <div class="w3-third">
+                  <a href="/portfolio.html"><img src="../images/gallery/img-9.png" class="w3-hover-opacity" style="width:100%"></a>
+                </div>
+                <div class="w3-third w3-margin-left">
+                  <a href="/portfolio.html"><img src="../images/gallery/img-2.png" class="w3-hover-opacity" style="width:100%"></a>
+                </div>
+            </div>
+            
+            <!-- End Page Content -->
+        </div>
+    </section>
+
+    <footer id="footer">
+      <div class="w3-container content">
+      
+          <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-container">
+              <img src="../images/logo.png" alt="Lights" class="w3-image" width="160" height="60">
+          </a>
+          <div class="social-links">
+              <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+              <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                  <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                  <i class="fab fa-pinterest-p"></i>
+              </a>
+              <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                  <i class="fab fa-instagram"></i>
+              </a>    
+              <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                  <i class="fab fa-github"></i>
+              </a>
+          </div>
+      
+          <p class="subtitle">© 2016 Mulitix Theme by ThemeForces. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </main>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b32bd06989.js" crossorigin="anonymous"></script>
+  
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  
+  <!-- Maps Google -->
+  <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuERAbKXDiTF8xHxZ5FXCpQfCLJ9RTx14&callback=initMap&libraries=&v=weekly" defer></script>
+</body>
+</html>

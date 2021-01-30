@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIAN</title>
+    <script src="./js/main.js"></script>
+    
+    <!-- Favicons for different devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#868686">
+    <meta name="apple-mobile-web-app-title" content="LIAN">
+    <meta name="application-name" content="LIAN">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Framework -W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <main>
+    <header>
+        <nav>
+            <div>
+                <div class="w3-bar w3-top">
+                    <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small w3-container" style="width:10%">
+                        <img src="../images/logo.png" alt="Lights" class="w3-image" width="130" height="30">
+                    </a>
+                    <div>
+                        <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Home</a>
+                        <a href="/about.html" class="w3-text-black  w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">About</a>
+                        <a href="/portfolio.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Portfolio</a>
+                        <a href="/blog.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Blog</a>
+                        <a href="/contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small">Contact</a>
+                        
+                        <input type="text" class="w3-bar-item w3-input w3-white w3-mobile w3-padding-24 w3-hide-small w3-hide-medium" placeholder="Search products..">
+                        <button class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-hide-small w3-hide-medium"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <a id="nav-icon" href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+                </div>
+                    
+                <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+        
+                    <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24"><img src="../images/logo.png" alt="Lights" class="w3-image" width="130" height="30"></a>
+                    <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Home</a>
+                    <a href="/about.html" class="w3-text-black w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">About</a>
+                    <a href="/portfolio.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Portfolio</a>
+                    <a href="/blog.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Blog</a>
+                    <a href="/contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">Contact</a>    
+                </div>
+            </div>
+        </nav>
+        
+        <script>
+            function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+            }
+        </script>
+    </header>
+
+    <section class="about-header">
+        <img class="about-header--img" src="../images/about-header.png" style="width:100%">
+    </section>
+
+    <section class="about-story">
+        <div class="w3-container w3-cell-row">
+            <div class="about-story--img w3-container w3-cell w3-mobile">
+                <img src="../images/story-img.png" style="width:80%; max-width: 620px">
+            </div>
+            <div class="about-story--right w3-container w3-cell w3-mobile">
+                <div class="w3-col">
+                    <div class="about-story--content w3-container">
+                        <div class="title">
+                            <p>Our story</p>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+                        </div>
+                    </div>
+                    <div class="about-story--content w3-container w3-animate-opacity">
+                        <div class="title">
+                            <p>Our skills</p>
+                            <div class="about-story--progress">
+
+                                <p>Photoshop</p>
+                                <div class="w3-grey w3-round-xlarge">
+                                    <div class="w3-container w3-dark-grey w3-round-xlarge" style="width:90%"><p>90</p></div>
+                                    <i class="one fas fa-circle" data-title="90%"></i>  
+                                </div><br>
+                                  
+                                <p>Branding</p>
+                                <div class="w3-grey w3-round-xlarge">
+                                    <div class="w3-container w3-dark-grey w3-round-xlarge" style="width:95%"><p>95</p></div>
+                                    <i class="two fas fa-circle" data-title="95%"></i>  
+                                </div><br>
+                                  
+                                <p>Photography</p>
+                                <div class="w3-grey w3-round-xlarge">
+                                    <div class="w3-container w3-dark-grey w3-round-xlarge" style="width:50%"><p>50</p></div>
+                                    <i class=" three fas fa-circle" data-title="50%"></i>
+                                </div><br>
+                                  
+                                <p>Web Design</p>
+                                <div class="w3-grey w3-round-xlarge">
+                                    <div class="w3-container w3-dark-grey w3-round-xlarge" style="width:85%"><p>85</p></div>
+                                    <i class="four fas fa-circle" data-title="85%"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="about-team">
+        <div class="w3-container w3-padding-32">
+            <div class="about-team--header w3-center">
+                <p class="title">Awesome Team</p>
+                <p class="text w3-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt <br> ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, <br> quis nostrud exerci tation ullamcorper suscipit.</p>
+            </div>
+            <div class="about-team--cards">
+                <div class="about-team-card w3-col m3 w3-center">
+                  <img src="../images/team-lian.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                  <div class="card-content">
+                    <h3>Lian Joy</h3>
+                    <p class="subtitle">Ceo / Founder</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum alias cumque molestias sapiente</p>
+                  </div>  
+                </div>
+            
+                <div class="about-team-card w3-col m3 w3-center">
+                  <img src="../images/team-thanh.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+                  <div class="card-content">
+                    <h3>Albert thanh</h3>
+                    <p class="subtitle">Ceo / Founder</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum alias cumque molestias sapiente</p>
+                    </div>  
+                </div>
+                  
+
+                <div class="about-team-card w3-col m3 w3-center">
+                    <img src="../images/team-jenn.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+                    <div class="card-content">
+                        <h3>Jenn Pereira</h3>
+                        <p class="subtitle">Ceo / Founder</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum alias cumque molestias sapiente</p>
+                    </div>  
+                </div>
+            
+        </div>
+        
+            
+    </section>
+    
+
+    <footer id="footer">
+        <div class="w3-container content">
+        
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24 w3-container">
+                <img src="../images/logo.png" alt="Lights" class="w3-image" width="160" height="60">
+            </a>
+            <div class="social-links">
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-instagram"></i>
+                </a>    
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-text-black w3-hover-none w3-border-white w3-bottombar w3-hover-border-black w3-padding-24">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        
+            <p class="subtitle">© 2016 Mulitix Theme by ThemeForces. All Rights Reserved.</p>
+        </div>
+    </footer>
+  </main>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b32bd06989.js" crossorigin="anonymous"></script>
+  
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  
+  <!-- Maps Google -->
+  <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuERAbKXDiTF8xHxZ5FXCpQfCLJ9RTx14&callback=initMap&libraries=&v=weekly" defer></script>
+</body>
+</html>
